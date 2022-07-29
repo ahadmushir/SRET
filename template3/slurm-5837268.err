@@ -1,0 +1,40 @@
+
+CondaSystemExit: Exiting.
+
+ERROR: Could not install packages due to an OSError: [Errno 122] Disk quota exceeded
+
+Traceback (most recent call last):
+  File "/home/mushir/.local/lib/python3.8/site-packages/aiohttp/client_reqrep.py", line 70, in <module>
+    import cchardet as chardet
+ModuleNotFoundError: No module named 'cchardet'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/mushir/template3/training.py", line 3, in <module>
+    from simpletransformers.language_modeling import (
+  File "/home/mushir/.local/lib/python3.8/site-packages/simpletransformers/language_modeling/__init__.py", line 2, in <module>
+    from simpletransformers.language_modeling.language_modeling_model import (
+  File "/home/mushir/.local/lib/python3.8/site-packages/simpletransformers/language_modeling/language_modeling_model.py", line 111, in <module>
+    from simpletransformers.language_modeling.language_modeling_utils import (
+  File "/home/mushir/.local/lib/python3.8/site-packages/simpletransformers/language_modeling/language_modeling_utils.py", line 9, in <module>
+    from datasets import load_dataset
+  File "/home/mushir/.local/lib/python3.8/site-packages/datasets/__init__.py", line 37, in <module>
+    from .arrow_dataset import Dataset, concatenate_datasets
+  File "/home/mushir/.local/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 62, in <module>
+    from .arrow_reader import ArrowReader
+  File "/home/mushir/.local/lib/python3.8/site-packages/datasets/arrow_reader.py", line 29, in <module>
+    from .download.download_config import DownloadConfig
+  File "/home/mushir/.local/lib/python3.8/site-packages/datasets/download/__init__.py", line 10, in <module>
+    from .streaming_download_manager import StreamingDownloadManager
+  File "/home/mushir/.local/lib/python3.8/site-packages/datasets/download/streaming_download_manager.py", line 17, in <module>
+    from aiohttp.client_exceptions import ClientError
+  File "/home/mushir/.local/lib/python3.8/site-packages/aiohttp/__init__.py", line 6, in <module>
+    from .client import (
+  File "/home/mushir/.local/lib/python3.8/site-packages/aiohttp/client.py", line 59, in <module>
+    from .client_reqrep import (
+  File "/home/mushir/.local/lib/python3.8/site-packages/aiohttp/client_reqrep.py", line 72, in <module>
+    import charset_normalizer as chardet  # type: ignore[no-redef]
+  File "/home/mushir/.local/lib/python3.8/site-packages/charset_normalizer/__init__.py", line 24, in <module>
+    from .api import from_bytes, from_fp, from_path, normalize
+ImportError: cannot import name 'from_bytes' from 'charset_normalizer.api' (/home/mushir/.local/lib/python3.8/site-packages/charset_normalizer/api.py)

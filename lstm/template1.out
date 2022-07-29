@@ -1,0 +1,573 @@
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... done
+
+# All requested packages already installed.
+
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: simpletransformers in /home/mushir/.local/lib/python3.8/site-packages (0.63.7)
+Requirement already satisfied: numpy in /software/anaconda3/2021.05/lib/python3.8/site-packages (from simpletransformers) (1.20.1)
+Requirement already satisfied: tqdm>=4.47.0 in /home/mushir/.local/lib/python3.8/site-packages (from simpletransformers) (4.64.0)
+Requirement already satisfied: streamlit in /home/mushir/.local/lib/python3.8/site-packages (from simpletransformers) (1.10.0)
+Requirement already satisfied: transformers>=4.6.0 in /home/mushir/.local/lib/python3.8/site-packages (from simpletransformers) (4.20.0)
+Requirement already satisfied: pandas in /software/anaconda3/2021.05/lib/python3.8/site-packages (from simpletransformers) (1.2.4)
+Requirement already satisfied: regex in /software/anaconda3/2021.05/lib/python3.8/site-packages (from simpletransformers) (2021.4.4)
+Requirement already satisfied: scikit-learn in /software/anaconda3/2021.05/lib/python3.8/site-packages (from simpletransformers) (0.24.1)
+Requirement already satisfied: datasets in /home/mushir/.local/lib/python3.8/site-packages (from simpletransformers) (2.3.2)
+Requirement already satisfied: requests in /software/anaconda3/2021.05/lib/python3.8/site-packages (from simpletransformers) (2.25.1)
+Requirement already satisfied: wandb>=0.10.32 in /home/mushir/.local/lib/python3.8/site-packages (from simpletransformers) (0.12.19)
+Requirement already satisfied: tensorboard in /software/anaconda3/2021.05/lib/python3.8/site-packages (from simpletransformers) (2.4.1)
+Requirement already satisfied: sentencepiece in /home/mushir/.local/lib/python3.8/site-packages (from simpletransformers) (0.1.96)
+Requirement already satisfied: tokenizers in /home/mushir/.local/lib/python3.8/site-packages (from simpletransformers) (0.12.1)
+Requirement already satisfied: seqeval in /home/mushir/.local/lib/python3.8/site-packages (from simpletransformers) (1.2.2)
+Requirement already satisfied: scipy in /software/anaconda3/2021.05/lib/python3.8/site-packages (from simpletransformers) (1.6.2)
+Requirement already satisfied: filelock in /software/anaconda3/2021.05/lib/python3.8/site-packages (from transformers>=4.6.0->simpletransformers) (3.0.12)
+Requirement already satisfied: packaging>=20.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from transformers>=4.6.0->simpletransformers) (20.9)
+Requirement already satisfied: huggingface-hub<1.0,>=0.1.0 in /home/mushir/.local/lib/python3.8/site-packages (from transformers>=4.6.0->simpletransformers) (0.7.0)
+Requirement already satisfied: pyyaml>=5.1 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from transformers>=4.6.0->simpletransformers) (5.4.1)
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /home/mushir/.local/lib/python3.8/site-packages (from huggingface-hub<1.0,>=0.1.0->transformers>=4.6.0->simpletransformers) (4.2.0)
+Requirement already satisfied: pyparsing>=2.0.2 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from packaging>=20.0->transformers>=4.6.0->simpletransformers) (2.4.7)
+Requirement already satisfied: promise<3,>=2.0 in /home/mushir/.local/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (2.3)
+Requirement already satisfied: setuptools in /software/anaconda3/2021.05/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (52.0.0.post20210125)
+Requirement already satisfied: six>=1.13.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (1.15.0)
+Requirement already satisfied: Click!=8.0.0,>=7.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (7.1.2)
+Requirement already satisfied: shortuuid>=0.5.0 in /home/mushir/.local/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (1.0.9)
+Requirement already satisfied: pathtools in /home/mushir/.local/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (0.1.2)
+Requirement already satisfied: psutil>=5.0.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (5.8.0)
+Requirement already satisfied: sentry-sdk>=1.0.0 in /home/mushir/.local/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (1.6.0)
+Requirement already satisfied: docker-pycreds>=0.4.0 in /home/mushir/.local/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (0.4.0)
+Requirement already satisfied: GitPython>=1.0.0 in /home/mushir/.local/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (3.1.27)
+Requirement already satisfied: setproctitle in /home/mushir/.local/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (1.2.3)
+Requirement already satisfied: protobuf<4.0dev,>=3.12.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from wandb>=0.10.32->simpletransformers) (3.13.0)
+Requirement already satisfied: gitdb<5,>=4.0.1 in /home/mushir/.local/lib/python3.8/site-packages (from GitPython>=1.0.0->wandb>=0.10.32->simpletransformers) (4.0.9)
+Requirement already satisfied: smmap<6,>=3.0.1 in /home/mushir/.local/lib/python3.8/site-packages (from gitdb<5,>=4.0.1->GitPython>=1.0.0->wandb>=0.10.32->simpletransformers) (5.0.0)
+Requirement already satisfied: idna<3,>=2.5 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from requests->simpletransformers) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from requests->simpletransformers) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from requests->simpletransformers) (4.0.0)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from requests->simpletransformers) (1.26.4)
+Requirement already satisfied: xxhash in /home/mushir/.local/lib/python3.8/site-packages (from datasets->simpletransformers) (3.0.0)
+Requirement already satisfied: responses<0.19 in /home/mushir/.local/lib/python3.8/site-packages (from datasets->simpletransformers) (0.18.0)
+Requirement already satisfied: aiohttp in /home/mushir/.local/lib/python3.8/site-packages (from datasets->simpletransformers) (3.8.1)
+Requirement already satisfied: fsspec[http]>=2021.05.0 in /home/mushir/.local/lib/python3.8/site-packages (from datasets->simpletransformers) (2022.5.0)
+Requirement already satisfied: multiprocess in /home/mushir/.local/lib/python3.8/site-packages (from datasets->simpletransformers) (0.70.13)
+Requirement already satisfied: pyarrow>=6.0.0 in /home/mushir/.local/lib/python3.8/site-packages (from datasets->simpletransformers) (8.0.0)
+Requirement already satisfied: dill<0.3.6 in /home/mushir/.local/lib/python3.8/site-packages (from datasets->simpletransformers) (0.3.5.1)
+Requirement already satisfied: frozenlist>=1.1.1 in /home/mushir/.local/lib/python3.8/site-packages (from aiohttp->datasets->simpletransformers) (1.3.0)
+Requirement already satisfied: charset-normalizer<3.0,>=2.0 in /home/mushir/.local/lib/python3.8/site-packages (from aiohttp->datasets->simpletransformers) (2.1.0)
+Requirement already satisfied: multidict<7.0,>=4.5 in /home/mushir/.local/lib/python3.8/site-packages (from aiohttp->datasets->simpletransformers) (6.0.2)
+Requirement already satisfied: yarl<2.0,>=1.0 in /home/mushir/.local/lib/python3.8/site-packages (from aiohttp->datasets->simpletransformers) (1.7.2)
+Requirement already satisfied: async-timeout<5.0,>=4.0.0a3 in /home/mushir/.local/lib/python3.8/site-packages (from aiohttp->datasets->simpletransformers) (4.0.2)
+Requirement already satisfied: attrs>=17.3.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from aiohttp->datasets->simpletransformers) (20.3.0)
+Requirement already satisfied: aiosignal>=1.1.2 in /home/mushir/.local/lib/python3.8/site-packages (from aiohttp->datasets->simpletransformers) (1.2.0)
+Requirement already satisfied: python-dateutil>=2.7.3 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from pandas->simpletransformers) (2.8.1)
+Requirement already satisfied: pytz>=2017.3 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from pandas->simpletransformers) (2021.1)
+Requirement already satisfied: joblib>=0.11 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from scikit-learn->simpletransformers) (1.0.1)
+Requirement already satisfied: threadpoolctl>=2.0.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from scikit-learn->simpletransformers) (2.1.0)
+Requirement already satisfied: altair>=3.2.0 in /home/mushir/.local/lib/python3.8/site-packages (from streamlit->simpletransformers) (4.2.0)
+Requirement already satisfied: tornado>=5.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from streamlit->simpletransformers) (6.1)
+Requirement already satisfied: validators in /home/mushir/.local/lib/python3.8/site-packages (from streamlit->simpletransformers) (0.20.0)
+Requirement already satisfied: watchdog in /software/anaconda3/2021.05/lib/python3.8/site-packages (from streamlit->simpletransformers) (1.0.2)
+Requirement already satisfied: rich in /home/mushir/.local/lib/python3.8/site-packages (from streamlit->simpletransformers) (12.4.4)
+Requirement already satisfied: pillow>=6.2.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from streamlit->simpletransformers) (8.2.0)
+Requirement already satisfied: semver in /home/mushir/.local/lib/python3.8/site-packages (from streamlit->simpletransformers) (2.13.0)
+Requirement already satisfied: importlib-metadata>=1.4 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from streamlit->simpletransformers) (3.10.0)
+Requirement already satisfied: toml in /software/anaconda3/2021.05/lib/python3.8/site-packages (from streamlit->simpletransformers) (0.10.2)
+Requirement already satisfied: tzlocal in /home/mushir/.local/lib/python3.8/site-packages (from streamlit->simpletransformers) (4.2)
+Requirement already satisfied: pydeck>=0.1.dev5 in /home/mushir/.local/lib/python3.8/site-packages (from streamlit->simpletransformers) (0.7.1)
+Requirement already satisfied: cachetools>=4.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from streamlit->simpletransformers) (4.2.4)
+Requirement already satisfied: pympler>=0.9 in /home/mushir/.local/lib/python3.8/site-packages (from streamlit->simpletransformers) (1.0.1)
+Requirement already satisfied: blinker in /software/anaconda3/2021.05/lib/python3.8/site-packages (from streamlit->simpletransformers) (1.4)
+Requirement already satisfied: entrypoints in /software/anaconda3/2021.05/lib/python3.8/site-packages (from altair>=3.2.0->streamlit->simpletransformers) (0.3)
+Requirement already satisfied: jsonschema>=3.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from altair>=3.2.0->streamlit->simpletransformers) (3.2.0)
+Requirement already satisfied: toolz in /software/anaconda3/2021.05/lib/python3.8/site-packages (from altair>=3.2.0->streamlit->simpletransformers) (0.11.1)
+Requirement already satisfied: jinja2 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from altair>=3.2.0->streamlit->simpletransformers) (2.11.3)
+Requirement already satisfied: zipp>=0.5 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from importlib-metadata>=1.4->streamlit->simpletransformers) (3.4.1)
+Requirement already satisfied: pyrsistent>=0.14.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from jsonschema>=3.0->altair>=3.2.0->streamlit->simpletransformers) (0.17.3)
+Requirement already satisfied: traitlets>=4.3.2 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from pydeck>=0.1.dev5->streamlit->simpletransformers) (5.0.5)
+Requirement already satisfied: ipywidgets>=7.0.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from pydeck>=0.1.dev5->streamlit->simpletransformers) (7.6.3)
+Requirement already satisfied: ipykernel>=5.1.2 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from pydeck>=0.1.dev5->streamlit->simpletransformers) (5.3.4)
+Requirement already satisfied: ipython>=5.0.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (7.22.0)
+Requirement already satisfied: jupyter-client in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (6.1.12)
+Requirement already satisfied: backcall in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.2.0)
+Requirement already satisfied: decorator in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (5.0.6)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (3.0.17)
+Requirement already satisfied: pexpect>4.3 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (4.8.0)
+Requirement already satisfied: jedi>=0.16 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.17.2)
+Requirement already satisfied: pickleshare in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.7.5)
+Requirement already satisfied: pygments in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (2.8.1)
+Requirement already satisfied: nbformat>=4.2.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (5.1.3)
+Requirement already satisfied: jupyterlab-widgets>=1.0.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (1.0.0)
+Requirement already satisfied: widgetsnbextension~=3.5.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (3.5.1)
+Requirement already satisfied: parso<0.8.0,>=0.7.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from jedi>=0.16->ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.7.0)
+Requirement already satisfied: MarkupSafe>=0.23 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from jinja2->altair>=3.2.0->streamlit->simpletransformers) (1.1.1)
+Requirement already satisfied: ipython-genutils in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbformat>=4.2.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.2.0)
+Requirement already satisfied: jupyter-core in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbformat>=4.2.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (4.7.1)
+Requirement already satisfied: ptyprocess>=0.5 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from pexpect>4.3->ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.7.0)
+Requirement already satisfied: wcwidth in /software/anaconda3/2021.05/lib/python3.8/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=5.0.0->ipykernel>=5.1.2->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.2.5)
+Requirement already satisfied: notebook>=4.4.1 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (6.3.0)
+Requirement already satisfied: Send2Trash>=1.5.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (1.5.0)
+Requirement already satisfied: pyzmq>=17 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (20.0.0)
+Requirement already satisfied: nbconvert in /software/anaconda3/2021.05/lib/python3.8/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (6.0.7)
+Requirement already satisfied: prometheus-client in /software/anaconda3/2021.05/lib/python3.8/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.10.1)
+Requirement already satisfied: terminado>=0.8.3 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.9.4)
+Requirement already satisfied: argon2-cffi in /software/anaconda3/2021.05/lib/python3.8/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (20.1.0)
+Requirement already satisfied: cffi>=1.0.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (1.14.5)
+Requirement already satisfied: pycparser in /software/anaconda3/2021.05/lib/python3.8/site-packages (from cffi>=1.0.0->argon2-cffi->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (2.20)
+Requirement already satisfied: testpath in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.4.4)
+Requirement already satisfied: nbclient<0.6.0,>=0.5.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.5.3)
+Requirement already satisfied: jupyterlab-pygments in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.1.2)
+Requirement already satisfied: defusedxml in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.7.1)
+Requirement already satisfied: mistune<2,>=0.8.1 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.8.4)
+Requirement already satisfied: bleach in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (3.3.0)
+Requirement already satisfied: pandocfilters>=1.4.1 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (1.4.3)
+Requirement already satisfied: async-generator in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (1.10)
+Requirement already satisfied: nest-asyncio in /software/anaconda3/2021.05/lib/python3.8/site-packages (from nbclient<0.6.0,>=0.5.0->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (1.5.1)
+Requirement already satisfied: webencodings in /software/anaconda3/2021.05/lib/python3.8/site-packages (from bleach->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.5.0->ipywidgets>=7.0.0->pydeck>=0.1.dev5->streamlit->simpletransformers) (0.5.1)
+Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in /home/mushir/.local/lib/python3.8/site-packages (from rich->streamlit->simpletransformers) (0.9.1)
+Requirement already satisfied: werkzeug>=0.11.15 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from tensorboard->simpletransformers) (1.0.1)
+Requirement already satisfied: google-auth-oauthlib<0.5,>=0.4.1 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from tensorboard->simpletransformers) (0.4.6)
+Requirement already satisfied: absl-py>=0.4 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from tensorboard->simpletransformers) (1.1.0)
+Requirement already satisfied: wheel>=0.26 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from tensorboard->simpletransformers) (0.36.2)
+Requirement already satisfied: google-auth<2,>=1.6.3 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from tensorboard->simpletransformers) (1.21.3)
+Requirement already satisfied: tensorboard-plugin-wit>=1.6.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from tensorboard->simpletransformers) (1.8.1)
+Requirement already satisfied: markdown>=2.6.8 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from tensorboard->simpletransformers) (3.3.4)
+Requirement already satisfied: grpcio>=1.24.3 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from tensorboard->simpletransformers) (1.33.2)
+Requirement already satisfied: rsa<5,>=3.1.4 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from google-auth<2,>=1.6.3->tensorboard->simpletransformers) (4.8)
+Requirement already satisfied: pyasn1-modules>=0.2.1 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from google-auth<2,>=1.6.3->tensorboard->simpletransformers) (0.2.7)
+Requirement already satisfied: requests-oauthlib>=0.7.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from google-auth-oauthlib<0.5,>=0.4.1->tensorboard->simpletransformers) (1.3.1)
+Requirement already satisfied: pyasn1<0.5.0,>=0.4.6 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from pyasn1-modules>=0.2.1->google-auth<2,>=1.6.3->tensorboard->simpletransformers) (0.4.8)
+Requirement already satisfied: oauthlib>=3.0.0 in /software/anaconda3/2021.05/lib/python3.8/site-packages (from requests-oauthlib>=0.7.0->google-auth-oauthlib<0.5,>=0.4.1->tensorboard->simpletransformers) (3.2.0)
+Requirement already satisfied: pytz-deprecation-shim in /home/mushir/.local/lib/python3.8/site-packages (from tzlocal->streamlit->simpletransformers) (0.1.0.post0)
+Requirement already satisfied: backports.zoneinfo in /home/mushir/.local/lib/python3.8/site-packages (from tzlocal->streamlit->simpletransformers) (0.2.1)
+Requirement already satisfied: tzdata in /home/mushir/.local/lib/python3.8/site-packages (from pytz-deprecation-shim->tzlocal->streamlit->simpletransformers) (2022.1)
+{'epoch': 0, 'batch': 0, 'loss': 6.572503089904785}
+{'epoch': 0, 'batch': 1, 'loss': 6.506397247314453}
+{'epoch': 0, 'batch': 2, 'loss': 6.41964864730835}
+{'epoch': 0, 'batch': 3, 'loss': 5.8815717697143555}
+{'epoch': 0, 'batch': 4, 'loss': 5.064159393310547}
+{'epoch': 0, 'batch': 5, 'loss': 5.171311855316162}
+{'epoch': 0, 'batch': 6, 'loss': 6.294378280639648}
+{'epoch': 0, 'batch': 7, 'loss': 4.806280612945557}
+{'epoch': 0, 'batch': 8, 'loss': 5.725983619689941}
+{'epoch': 0, 'batch': 9, 'loss': 4.958680152893066}
+{'epoch': 0, 'batch': 10, 'loss': 4.8088178634643555}
+{'epoch': 0, 'batch': 11, 'loss': 2.3106701374053955}
+{'epoch': 0, 'batch': 12, 'loss': 3.6858277320861816}
+{'epoch': 0, 'batch': 13, 'loss': 2.594024658203125}
+{'epoch': 0, 'batch': 14, 'loss': 3.215308666229248}
+{'epoch': 0, 'batch': 15, 'loss': 3.780702829360962}
+{'epoch': 0, 'batch': 16, 'loss': 5.4429192543029785}
+{'epoch': 0, 'batch': 17, 'loss': 3.6506402492523193}
+{'epoch': 0, 'batch': 18, 'loss': 5.469836711883545}
+{'epoch': 0, 'batch': 19, 'loss': 4.388219356536865}
+{'epoch': 0, 'batch': 20, 'loss': 6.235642433166504}
+{'epoch': 0, 'batch': 21, 'loss': 5.177144527435303}
+{'epoch': 0, 'batch': 22, 'loss': 5.548181533813477}
+{'epoch': 0, 'batch': 23, 'loss': 4.488516330718994}
+{'epoch': 0, 'batch': 24, 'loss': 3.5067214965820312}
+{'epoch': 0, 'batch': 25, 'loss': 3.4598100185394287}
+{'epoch': 0, 'batch': 26, 'loss': 3.1800901889801025}
+{'epoch': 0, 'batch': 27, 'loss': 2.842865228652954}
+{'epoch': 0, 'batch': 28, 'loss': 4.982744216918945}
+{'epoch': 0, 'batch': 29, 'loss': 5.420861721038818}
+{'epoch': 0, 'batch': 30, 'loss': 5.510705947875977}
+{'epoch': 0, 'batch': 31, 'loss': 4.981749057769775}
+{'epoch': 0, 'batch': 32, 'loss': 4.674527645111084}
+{'epoch': 0, 'batch': 33, 'loss': 4.8981733322143555}
+{'epoch': 0, 'batch': 34, 'loss': 5.499767780303955}
+{'epoch': 0, 'batch': 35, 'loss': 5.229604721069336}
+{'epoch': 0, 'batch': 36, 'loss': 4.1651740074157715}
+{'epoch': 0, 'batch': 37, 'loss': 5.018213748931885}
+{'epoch': 0, 'batch': 38, 'loss': 6.523861885070801}
+{'epoch': 0, 'batch': 39, 'loss': 6.123528003692627}
+{'epoch': 0, 'batch': 40, 'loss': 5.583582401275635}
+{'epoch': 0, 'batch': 41, 'loss': 5.6429762840271}
+{'epoch': 0, 'batch': 42, 'loss': 4.579026222229004}
+{'epoch': 0, 'batch': 43, 'loss': 3.6982665061950684}
+{'epoch': 0, 'batch': 44, 'loss': 5.4999895095825195}
+{'epoch': 0, 'batch': 45, 'loss': 4.541494369506836}
+{'epoch': 0, 'batch': 46, 'loss': 3.9447481632232666}
+{'epoch': 0, 'batch': 47, 'loss': 4.582262992858887}
+{'epoch': 0, 'batch': 48, 'loss': 2.96500563621521}
+{'epoch': 0, 'batch': 49, 'loss': 4.963885307312012}
+{'epoch': 0, 'batch': 50, 'loss': 5.536413192749023}
+{'epoch': 0, 'batch': 51, 'loss': 3.814457416534424}
+{'epoch': 0, 'batch': 52, 'loss': 3.9564929008483887}
+{'epoch': 0, 'batch': 53, 'loss': 5.142343044281006}
+{'epoch': 0, 'batch': 54, 'loss': 4.390451908111572}
+{'epoch': 0, 'batch': 55, 'loss': 3.5459835529327393}
+{'epoch': 0, 'batch': 56, 'loss': 5.429940700531006}
+{'epoch': 0, 'batch': 57, 'loss': 5.349902153015137}
+{'epoch': 0, 'batch': 58, 'loss': 5.447510242462158}
+{'epoch': 0, 'batch': 59, 'loss': 3.614729642868042}
+{'epoch': 0, 'batch': 60, 'loss': 3.160954475402832}
+{'epoch': 0, 'batch': 61, 'loss': 4.7196807861328125}
+{'epoch': 0, 'batch': 62, 'loss': 5.981992721557617}
+{'epoch': 0, 'batch': 63, 'loss': 5.79793119430542}
+{'epoch': 0, 'batch': 64, 'loss': 5.468122482299805}
+{'epoch': 0, 'batch': 65, 'loss': 4.550975322723389}
+{'epoch': 0, 'batch': 66, 'loss': 3.638637065887451}
+{'epoch': 0, 'batch': 67, 'loss': 5.54043436050415}
+{'epoch': 0, 'batch': 68, 'loss': 4.861953258514404}
+{'epoch': 0, 'batch': 69, 'loss': 4.655101299285889}
+{'epoch': 0, 'batch': 70, 'loss': 4.999751567840576}
+{'epoch': 0, 'batch': 71, 'loss': 4.750217914581299}
+{'epoch': 0, 'batch': 72, 'loss': 5.589483737945557}
+{'epoch': 0, 'batch': 73, 'loss': 4.28011417388916}
+{'epoch': 0, 'batch': 74, 'loss': 3.037692070007324}
+{'epoch': 0, 'batch': 75, 'loss': 3.3563714027404785}
+{'epoch': 0, 'batch': 76, 'loss': 4.492542266845703}
+{'epoch': 0, 'batch': 77, 'loss': 4.850470542907715}
+{'epoch': 0, 'batch': 78, 'loss': 4.44913911819458}
+{'epoch': 0, 'batch': 79, 'loss': 4.590018272399902}
+{'epoch': 0, 'batch': 80, 'loss': 5.702313423156738}
+{'epoch': 0, 'batch': 81, 'loss': 6.008045196533203}
+{'epoch': 0, 'batch': 82, 'loss': 6.636000156402588}
+{'epoch': 0, 'batch': 83, 'loss': 3.729548692703247}
+{'epoch': 0, 'batch': 84, 'loss': 3.402960777282715}
+{'epoch': 0, 'batch': 85, 'loss': 5.567028999328613}
+{'epoch': 0, 'batch': 86, 'loss': 4.3241047859191895}
+{'epoch': 0, 'batch': 87, 'loss': 6.432062149047852}
+{'epoch': 0, 'batch': 88, 'loss': 4.73802375793457}
+{'epoch': 0, 'batch': 89, 'loss': 5.44368314743042}
+{'epoch': 0, 'batch': 90, 'loss': 5.048468589782715}
+{'epoch': 0, 'batch': 91, 'loss': 4.2663750648498535}
+{'epoch': 0, 'batch': 92, 'loss': 4.7634077072143555}
+{'epoch': 0, 'batch': 93, 'loss': 5.295101642608643}
+{'epoch': 0, 'batch': 94, 'loss': 5.459971904754639}
+{'epoch': 0, 'batch': 95, 'loss': 4.695879936218262}
+{'epoch': 0, 'batch': 96, 'loss': 5.704256534576416}
+{'epoch': 0, 'batch': 97, 'loss': 5.220744609832764}
+{'epoch': 0, 'batch': 98, 'loss': 4.727014541625977}
+{'epoch': 0, 'batch': 99, 'loss': 5.1137776374816895}
+{'epoch': 0, 'batch': 100, 'loss': 3.833972692489624}
+{'epoch': 0, 'batch': 101, 'loss': 3.6642613410949707}
+{'epoch': 0, 'batch': 102, 'loss': 3.067460536956787}
+{'epoch': 0, 'batch': 103, 'loss': 3.120741605758667}
+{'epoch': 0, 'batch': 104, 'loss': 4.586502552032471}
+{'epoch': 0, 'batch': 105, 'loss': 4.228545665740967}
+{'epoch': 0, 'batch': 106, 'loss': 4.495980262756348}
+{'epoch': 0, 'batch': 107, 'loss': 2.9374983310699463}
+{'epoch': 0, 'batch': 108, 'loss': 5.629986763000488}
+{'epoch': 0, 'batch': 109, 'loss': 2.749772548675537}
+{'epoch': 0, 'batch': 110, 'loss': 3.0677623748779297}
+{'epoch': 0, 'batch': 111, 'loss': 2.527482032775879}
+{'epoch': 0, 'batch': 112, 'loss': 4.70274019241333}
+{'epoch': 0, 'batch': 113, 'loss': 5.897063732147217}
+{'epoch': 0, 'batch': 114, 'loss': 5.8803181648254395}
+{'epoch': 0, 'batch': 115, 'loss': 4.528698921203613}
+{'epoch': 0, 'batch': 116, 'loss': 4.766671657562256}
+{'epoch': 0, 'batch': 117, 'loss': 5.078481674194336}
+{'epoch': 0, 'batch': 118, 'loss': 4.50324010848999}
+{'epoch': 0, 'batch': 119, 'loss': 4.741522789001465}
+{'epoch': 0, 'batch': 120, 'loss': 4.347865581512451}
+{'epoch': 0, 'batch': 121, 'loss': 4.572735786437988}
+{'epoch': 0, 'batch': 122, 'loss': 4.174715518951416}
+{'epoch': 0, 'batch': 123, 'loss': 4.784627914428711}
+{'epoch': 0, 'batch': 124, 'loss': 4.770688056945801}
+{'epoch': 0, 'batch': 125, 'loss': 4.143420696258545}
+{'epoch': 0, 'batch': 126, 'loss': 4.268590927124023}
+{'epoch': 0, 'batch': 127, 'loss': 4.536350727081299}
+{'epoch': 0, 'batch': 128, 'loss': 3.704902172088623}
+{'epoch': 0, 'batch': 129, 'loss': 5.327297687530518}
+{'epoch': 0, 'batch': 130, 'loss': 3.703153371810913}
+{'epoch': 0, 'batch': 131, 'loss': 3.4435431957244873}
+{'epoch': 0, 'batch': 132, 'loss': 2.623053550720215}
+{'epoch': 0, 'batch': 133, 'loss': 2.0525519847869873}
+{'epoch': 0, 'batch': 134, 'loss': 3.3611366748809814}
+{'epoch': 0, 'batch': 135, 'loss': 4.24484395980835}
+{'epoch': 0, 'batch': 136, 'loss': 3.0026984214782715}
+{'epoch': 0, 'batch': 137, 'loss': 4.2304911613464355}
+{'epoch': 0, 'batch': 138, 'loss': 2.6473424434661865}
+{'epoch': 0, 'batch': 139, 'loss': 4.312827110290527}
+{'epoch': 0, 'batch': 140, 'loss': 2.4444851875305176}
+{'epoch': 0, 'batch': 141, 'loss': 2.825127363204956}
+{'epoch': 0, 'batch': 142, 'loss': 2.2543466091156006}
+{'epoch': 0, 'batch': 143, 'loss': 4.268342971801758}
+{'epoch': 0, 'batch': 144, 'loss': 5.094588279724121}
+{'epoch': 0, 'batch': 145, 'loss': 4.325145721435547}
+{'epoch': 0, 'batch': 146, 'loss': 3.0404739379882812}
+{'epoch': 0, 'batch': 147, 'loss': 4.771303176879883}
+{'epoch': 0, 'batch': 148, 'loss': 4.321112632751465}
+{'epoch': 0, 'batch': 149, 'loss': 4.151795387268066}
+{'epoch': 0, 'batch': 150, 'loss': 5.253027439117432}
+{'epoch': 0, 'batch': 151, 'loss': 5.08854341506958}
+{'epoch': 0, 'batch': 152, 'loss': 4.728903770446777}
+{'epoch': 0, 'batch': 153, 'loss': 4.801736831665039}
+{'epoch': 0, 'batch': 154, 'loss': 4.921478748321533}
+{'epoch': 0, 'batch': 155, 'loss': 4.454074382781982}
+{'epoch': 0, 'batch': 156, 'loss': 4.509613037109375}
+{'epoch': 0, 'batch': 157, 'loss': 4.558430194854736}
+{'epoch': 0, 'batch': 158, 'loss': 5.158820629119873}
+{'epoch': 0, 'batch': 159, 'loss': 4.847349643707275}
+{'epoch': 0, 'batch': 160, 'loss': 4.654599666595459}
+{'epoch': 0, 'batch': 161, 'loss': 5.119387149810791}
+{'epoch': 0, 'batch': 162, 'loss': 5.270871162414551}
+{'epoch': 0, 'batch': 163, 'loss': 4.6017746925354}
+{'epoch': 0, 'batch': 164, 'loss': 6.14799690246582}
+{'epoch': 0, 'batch': 165, 'loss': 3.7193763256073}
+{'epoch': 0, 'batch': 166, 'loss': 4.610780239105225}
+{'epoch': 0, 'batch': 167, 'loss': 2.7331128120422363}
+{'epoch': 0, 'batch': 168, 'loss': 5.093284606933594}
+{'epoch': 0, 'batch': 169, 'loss': 2.7739901542663574}
+{'epoch': 0, 'batch': 170, 'loss': 3.124911069869995}
+{'epoch': 0, 'batch': 171, 'loss': 2.6564576625823975}
+{'epoch': 0, 'batch': 172, 'loss': 3.909417152404785}
+{'epoch': 0, 'batch': 173, 'loss': 3.6857409477233887}
+{'epoch': 0, 'batch': 174, 'loss': 3.0648140907287598}
+{'epoch': 0, 'batch': 175, 'loss': 2.285353422164917}
+{'epoch': 0, 'batch': 176, 'loss': 1.902170181274414}
+{'epoch': 0, 'batch': 177, 'loss': 3.6895008087158203}
+{'epoch': 0, 'batch': 178, 'loss': 1.1854188442230225}
+{'epoch': 0, 'batch': 179, 'loss': 4.687801837921143}
+{'epoch': 0, 'batch': 180, 'loss': 0.8827275037765503}
+{'epoch': 0, 'batch': 181, 'loss': 4.559109210968018}
+{'epoch': 0, 'batch': 182, 'loss': 1.8649166822433472}
+{'epoch': 0, 'batch': 183, 'loss': 4.489192962646484}
+{'epoch': 0, 'batch': 184, 'loss': 0.9618550539016724}
+{'epoch': 0, 'batch': 185, 'loss': 5.026966094970703}
+{'epoch': 0, 'batch': 186, 'loss': 5.079014301300049}
+{'epoch': 0, 'batch': 187, 'loss': 4.754770755767822}
+{'epoch': 0, 'batch': 188, 'loss': 4.230368137359619}
+{'epoch': 0, 'batch': 189, 'loss': 4.781531810760498}
+{'epoch': 0, 'batch': 190, 'loss': 4.356418609619141}
+{'epoch': 0, 'batch': 191, 'loss': 4.520700454711914}
+{'epoch': 0, 'batch': 192, 'loss': 4.084648132324219}
+{'epoch': 0, 'batch': 193, 'loss': 4.265898704528809}
+{'epoch': 0, 'batch': 194, 'loss': 4.77716064453125}
+{'epoch': 0, 'batch': 195, 'loss': 4.20083475112915}
+{'epoch': 0, 'batch': 196, 'loss': 3.9732766151428223}
+{'epoch': 0, 'batch': 197, 'loss': 4.030340194702148}
+{'epoch': 0, 'batch': 198, 'loss': 3.843404531478882}
+{'epoch': 0, 'batch': 199, 'loss': 3.7216386795043945}
+{'epoch': 0, 'batch': 200, 'loss': 4.055726528167725}
+{'epoch': 0, 'batch': 201, 'loss': 3.94291353225708}
+{'epoch': 0, 'batch': 202, 'loss': 4.378700256347656}
+{'epoch': 0, 'batch': 203, 'loss': 4.641602516174316}
+{'epoch': 0, 'batch': 204, 'loss': 4.1336469650268555}
+{'epoch': 0, 'batch': 205, 'loss': 4.681385040283203}
+{'epoch': 0, 'batch': 206, 'loss': 3.9269983768463135}
+{'epoch': 0, 'batch': 207, 'loss': 4.271515369415283}
+{'epoch': 0, 'batch': 208, 'loss': 4.649567604064941}
+{'epoch': 0, 'batch': 209, 'loss': 3.851567268371582}
+{'epoch': 0, 'batch': 210, 'loss': 3.791675567626953}
+{'epoch': 0, 'batch': 211, 'loss': 3.4835658073425293}
+{'epoch': 0, 'batch': 212, 'loss': 3.8087167739868164}
+{'epoch': 0, 'batch': 213, 'loss': 3.1833832263946533}
+{'epoch': 0, 'batch': 214, 'loss': 4.120912075042725}
+{'epoch': 0, 'batch': 215, 'loss': 2.650379180908203}
+{'epoch': 0, 'batch': 216, 'loss': 4.540565490722656}
+{'epoch': 0, 'batch': 217, 'loss': 2.4387857913970947}
+{'epoch': 0, 'batch': 218, 'loss': 2.327218770980835}
+{'epoch': 0, 'batch': 219, 'loss': 2.0426290035247803}
+{'epoch': 0, 'batch': 220, 'loss': 3.6660122871398926}
+{'epoch': 0, 'batch': 221, 'loss': 2.7330055236816406}
+{'epoch': 0, 'batch': 222, 'loss': 3.0521466732025146}
+{'epoch': 0, 'batch': 223, 'loss': 1.9144415855407715}
+{'epoch': 0, 'batch': 224, 'loss': 1.7499029636383057}
+{'epoch': 0, 'batch': 225, 'loss': 3.0420989990234375}
+{'epoch': 0, 'batch': 226, 'loss': 1.349740743637085}
+{'epoch': 0, 'batch': 227, 'loss': 3.9742093086242676}
+{'epoch': 0, 'batch': 228, 'loss': 0.5308413505554199}
+{'epoch': 0, 'batch': 229, 'loss': 3.738842248916626}
+{'epoch': 0, 'batch': 230, 'loss': 2.0905375480651855}
+{'epoch': 0, 'batch': 231, 'loss': 3.589792251586914}
+{'epoch': 0, 'batch': 232, 'loss': 1.1121119260787964}
+{'epoch': 0, 'batch': 233, 'loss': 4.322380065917969}
+{'epoch': 0, 'batch': 234, 'loss': 1.6405670642852783}
+{'epoch': 0, 'batch': 235, 'loss': 4.600691795349121}
+{'epoch': 0, 'batch': 236, 'loss': 4.233657360076904}
+{'epoch': 0, 'batch': 237, 'loss': 4.413402080535889}
+{'epoch': 0, 'batch': 238, 'loss': 3.9175593852996826}
+{'epoch': 0, 'batch': 239, 'loss': 4.123037815093994}
+{'epoch': 0, 'batch': 240, 'loss': 4.676055431365967}
+{'epoch': 0, 'batch': 241, 'loss': 2.5362496376037598}
+{'epoch': 0, 'batch': 242, 'loss': 3.3957340717315674}
+{'epoch': 0, 'batch': 243, 'loss': 2.1764302253723145}
+{'epoch': 0, 'batch': 244, 'loss': 2.0514771938323975}
+{'epoch': 0, 'batch': 245, 'loss': 2.6891462802886963}
+{'epoch': 0, 'batch': 246, 'loss': 3.640218496322632}
+{'epoch': 0, 'batch': 247, 'loss': 4.503715991973877}
+{'epoch': 0, 'batch': 248, 'loss': 3.6361777782440186}
+{'epoch': 0, 'batch': 249, 'loss': 2.5813043117523193}
+{'epoch': 0, 'batch': 250, 'loss': 4.095401763916016}
+{'epoch': 0, 'batch': 251, 'loss': 3.5710768699645996}
+{'epoch': 0, 'batch': 252, 'loss': 2.5204544067382812}
+{'epoch': 0, 'batch': 253, 'loss': 4.069883823394775}
+{'epoch': 0, 'batch': 254, 'loss': 4.272613048553467}
+{'epoch': 0, 'batch': 255, 'loss': 3.483020067214966}
+{'epoch': 0, 'batch': 256, 'loss': 2.145068883895874}
+{'epoch': 0, 'batch': 257, 'loss': 4.017148494720459}
+{'epoch': 0, 'batch': 258, 'loss': 3.702178478240967}
+{'epoch': 0, 'batch': 259, 'loss': 2.8554487228393555}
+{'epoch': 0, 'batch': 260, 'loss': 6.0386643409729}
+{'epoch': 0, 'batch': 261, 'loss': 4.214698791503906}
+{'epoch': 0, 'batch': 262, 'loss': 3.812899351119995}
+{'epoch': 0, 'batch': 263, 'loss': 3.3028903007507324}
+{'epoch': 0, 'batch': 264, 'loss': 4.1610636711120605}
+{'epoch': 0, 'batch': 265, 'loss': 1.9991812705993652}
+{'epoch': 0, 'batch': 266, 'loss': 2.1604483127593994}
+{'epoch': 0, 'batch': 267, 'loss': 3.733083724975586}
+{'epoch': 0, 'batch': 268, 'loss': 5.811976909637451}
+{'epoch': 0, 'batch': 269, 'loss': 3.9196014404296875}
+{'epoch': 0, 'batch': 270, 'loss': 3.346372365951538}
+{'epoch': 0, 'batch': 271, 'loss': 0.8466778993606567}
+{'epoch': 0, 'batch': 272, 'loss': 2.3013193607330322}
+{'epoch': 0, 'batch': 273, 'loss': 4.8231282234191895}
+{'epoch': 0, 'batch': 274, 'loss': 6.391595363616943}
+{'epoch': 0, 'batch': 275, 'loss': 6.49119758605957}
+{'epoch': 0, 'batch': 276, 'loss': 6.902632236480713}
+{'epoch': 0, 'batch': 277, 'loss': 5.368454933166504}
+{'epoch': 0, 'batch': 278, 'loss': 4.737712383270264}
+{'epoch': 0, 'batch': 279, 'loss': 4.624128341674805}
+{'epoch': 0, 'batch': 280, 'loss': 3.599886178970337}
+{'epoch': 0, 'batch': 281, 'loss': 3.8309996128082275}
+{'epoch': 0, 'batch': 282, 'loss': 4.07633638381958}
+{'epoch': 0, 'batch': 283, 'loss': 5.026248931884766}
+{'epoch': 0, 'batch': 284, 'loss': 5.464701175689697}
+{'epoch': 0, 'batch': 285, 'loss': 3.637777090072632}
+{'epoch': 0, 'batch': 286, 'loss': 3.92991304397583}
+{'epoch': 0, 'batch': 287, 'loss': 6.130543231964111}
+{'epoch': 0, 'batch': 288, 'loss': 5.1914143562316895}
+{'epoch': 0, 'batch': 289, 'loss': 4.0897650718688965}
+{'epoch': 0, 'batch': 290, 'loss': 2.641310930252075}
+{'epoch': 0, 'batch': 291, 'loss': 4.250864505767822}
+{'epoch': 0, 'batch': 292, 'loss': 2.5964791774749756}
+{'epoch': 0, 'batch': 293, 'loss': 1.9647055864334106}
+{'epoch': 0, 'batch': 294, 'loss': 2.643519163131714}
+{'epoch': 0, 'batch': 295, 'loss': 2.7791998386383057}
+{'epoch': 0, 'batch': 296, 'loss': 1.3460099697113037}
+{'epoch': 0, 'batch': 297, 'loss': 1.645040512084961}
+{'epoch': 0, 'batch': 298, 'loss': 1.1220039129257202}
+{'epoch': 0, 'batch': 299, 'loss': 3.4086363315582275}
+{'epoch': 0, 'batch': 300, 'loss': 1.97633695602417}
+{'epoch': 0, 'batch': 301, 'loss': 3.4966020584106445}
+{'epoch': 0, 'batch': 302, 'loss': 3.2794206142425537}
+{'epoch': 0, 'batch': 303, 'loss': 4.2361159324646}
+{'epoch': 0, 'batch': 304, 'loss': 4.2349348068237305}
+{'epoch': 0, 'batch': 305, 'loss': 3.0938680171966553}
+{'epoch': 0, 'batch': 306, 'loss': 2.385988235473633}
+{'epoch': 0, 'batch': 307, 'loss': 3.025240182876587}
+{'epoch': 0, 'batch': 308, 'loss': 4.20967435836792}
+{'epoch': 0, 'batch': 309, 'loss': 3.9360909461975098}
+{'epoch': 0, 'batch': 310, 'loss': 4.732591152191162}
+{'epoch': 0, 'batch': 311, 'loss': 3.525712728500366}
+{'epoch': 0, 'batch': 312, 'loss': 3.7142536640167236}
+{'epoch': 0, 'batch': 313, 'loss': 3.643387794494629}
+{'epoch': 0, 'batch': 314, 'loss': 2.415895462036133}
+{'epoch': 0, 'batch': 315, 'loss': 2.6765453815460205}
+{'epoch': 0, 'batch': 316, 'loss': 1.2352184057235718}
+{'epoch': 0, 'batch': 317, 'loss': 2.348863363265991}
+{'epoch': 0, 'batch': 318, 'loss': 2.12607741355896}
+{'epoch': 0, 'batch': 319, 'loss': 2.2210898399353027}
+{'epoch': 0, 'batch': 320, 'loss': 2.111680269241333}
+{'epoch': 0, 'batch': 321, 'loss': 1.7380844354629517}
+{'epoch': 0, 'batch': 322, 'loss': 5.288358688354492}
+{'epoch': 0, 'batch': 323, 'loss': 4.749605655670166}
+{'epoch': 0, 'batch': 324, 'loss': 3.629973888397217}
+{'epoch': 0, 'batch': 325, 'loss': 3.6827468872070312}
+{'epoch': 0, 'batch': 326, 'loss': 4.442695140838623}
+{'epoch': 0, 'batch': 327, 'loss': 4.0121169090271}
+{'epoch': 0, 'batch': 328, 'loss': 4.941925048828125}
+{'epoch': 0, 'batch': 329, 'loss': 4.64561653137207}
+{'epoch': 0, 'batch': 330, 'loss': 4.304096221923828}
+{'epoch': 0, 'batch': 331, 'loss': 3.073927640914917}
+{'epoch': 0, 'batch': 332, 'loss': 3.314703941345215}
+{'epoch': 0, 'batch': 333, 'loss': 3.9461424350738525}
+{'epoch': 0, 'batch': 334, 'loss': 2.7090203762054443}
+{'epoch': 0, 'batch': 335, 'loss': 3.0803897380828857}
+{'epoch': 0, 'batch': 336, 'loss': 3.60746693611145}
+{'epoch': 0, 'batch': 337, 'loss': 4.38308048248291}
+{'epoch': 0, 'batch': 338, 'loss': 2.7192084789276123}
+{'epoch': 0, 'batch': 339, 'loss': 4.436413764953613}
+{'epoch': 0, 'batch': 340, 'loss': 2.8251986503601074}
+{'epoch': 0, 'batch': 341, 'loss': 2.470857620239258}
+{'epoch': 0, 'batch': 342, 'loss': 5.6257147789001465}
+{'epoch': 0, 'batch': 343, 'loss': 3.0293660163879395}
+{'epoch': 0, 'batch': 344, 'loss': 1.7084934711456299}
+{'epoch': 0, 'batch': 345, 'loss': 2.04655122756958}
+{'epoch': 0, 'batch': 346, 'loss': 1.9385889768600464}
+{'epoch': 0, 'batch': 347, 'loss': 2.300452470779419}
+{'epoch': 0, 'batch': 348, 'loss': 1.95211660861969}
+{'epoch': 0, 'batch': 349, 'loss': 1.5031071901321411}
+{'epoch': 0, 'batch': 350, 'loss': 1.4904221296310425}
+{'epoch': 0, 'batch': 351, 'loss': 1.8478364944458008}
+{'epoch': 0, 'batch': 352, 'loss': 1.2989939451217651}
+{'epoch': 0, 'batch': 353, 'loss': 2.4706737995147705}
+{'epoch': 0, 'batch': 354, 'loss': 2.483947992324829}
+{'epoch': 0, 'batch': 355, 'loss': 4.938772678375244}
+{'epoch': 0, 'batch': 356, 'loss': 3.3279507160186768}
+{'epoch': 0, 'batch': 357, 'loss': 2.6897711753845215}
+{'epoch': 0, 'batch': 358, 'loss': 3.4314496517181396}
+{'epoch': 0, 'batch': 359, 'loss': 2.8835301399230957}
+{'epoch': 0, 'batch': 360, 'loss': 4.593601703643799}
+{'epoch': 0, 'batch': 361, 'loss': 4.140547752380371}
+{'epoch': 0, 'batch': 362, 'loss': 3.012423276901245}
+{'epoch': 0, 'batch': 363, 'loss': 3.2180464267730713}
+{'epoch': 0, 'batch': 364, 'loss': 4.329999923706055}
+{'epoch': 0, 'batch': 365, 'loss': 6.093351364135742}
+{'epoch': 0, 'batch': 366, 'loss': 3.013800621032715}
+{'epoch': 0, 'batch': 367, 'loss': 5.445178508758545}
+{'epoch': 0, 'batch': 368, 'loss': 3.8817715644836426}
+{'epoch': 0, 'batch': 369, 'loss': 3.720574140548706}
+{'epoch': 0, 'batch': 370, 'loss': 3.9975361824035645}
+{'epoch': 0, 'batch': 371, 'loss': 3.6875786781311035}
+{'epoch': 0, 'batch': 372, 'loss': 1.5980231761932373}
+{'epoch': 0, 'batch': 373, 'loss': 1.381455898284912}
+{'epoch': 0, 'batch': 374, 'loss': 2.045027494430542}
+{'epoch': 0, 'batch': 375, 'loss': 2.207122802734375}
+{'epoch': 0, 'batch': 376, 'loss': 4.114324569702148}
+{'epoch': 0, 'batch': 377, 'loss': 2.8430049419403076}
+{'epoch': 0, 'batch': 378, 'loss': 4.421695232391357}
+{'epoch': 0, 'batch': 379, 'loss': 1.7404850721359253}
+{'epoch': 0, 'batch': 380, 'loss': 2.1230287551879883}
+{'epoch': 0, 'batch': 381, 'loss': 2.8842780590057373}
+{'epoch': 0, 'batch': 382, 'loss': 2.2119054794311523}
+{'epoch': 0, 'batch': 383, 'loss': 2.9701242446899414}
+{'epoch': 0, 'batch': 384, 'loss': 3.3949811458587646}
+{'epoch': 0, 'batch': 385, 'loss': 3.679098606109619}
+{'epoch': 0, 'batch': 386, 'loss': 5.472573757171631}
+{'epoch': 0, 'batch': 387, 'loss': 5.337500095367432}
+{'epoch': 0, 'batch': 388, 'loss': 4.933570384979248}
+{'epoch': 0, 'batch': 389, 'loss': 4.521263599395752}
+{'epoch': 0, 'batch': 390, 'loss': 4.959379196166992}
+{'epoch': 0, 'batch': 391, 'loss': 3.6709437370300293}
+{'epoch': 0, 'batch': 392, 'loss': 3.717142343521118}
+{'epoch': 0, 'batch': 393, 'loss': 3.251544237136841}
+{'epoch': 0, 'batch': 394, 'loss': 3.4602274894714355}
+{'epoch': 0, 'batch': 395, 'loss': 4.588169574737549}
+{'epoch': 0, 'batch': 396, 'loss': 4.592275619506836}
+{'epoch': 0, 'batch': 397, 'loss': 3.5062966346740723}
+{'epoch': 0, 'batch': 398, 'loss': 2.7313411235809326}
+{'epoch': 0, 'batch': 399, 'loss': 3.806542158126831}
+{'epoch': 0, 'batch': 400, 'loss': 3.391009569168091}
+{'epoch': 0, 'batch': 401, 'loss': 4.090206623077393}
+{'epoch': 0, 'batch': 402, 'loss': 4.180229187011719}
+{'epoch': 0, 'batch': 403, 'loss': 3.855668067932129}
+{'epoch': 0, 'batch': 404, 'loss': 2.582969903945923}
+{'epoch': 0, 'batch': 405, 'loss': 3.2071688175201416}
+{'epoch': 0, 'batch': 406, 'loss': 2.8369686603546143}
+{'epoch': 0, 'batch': 407, 'loss': 2.7651007175445557}
+{'epoch': 0, 'batch': 408, 'loss': 2.9150969982147217}
+{'epoch': 0, 'batch': 409, 'loss': 2.948967933654785}
+{'epoch': 0, 'batch': 410, 'loss': 3.4538581371307373}
+{'epoch': 0, 'batch': 411, 'loss': 5.400954723358154}
+{'epoch': 0, 'batch': 412, 'loss': 4.141663074493408}
+{'epoch': 0, 'batch': 413, 'loss': 3.111811399459839}
+{'epoch': 0, 'batch': 414, 'loss': 4.367457866668701}
+{'epoch': 0, 'batch': 415, 'loss': 3.383819341659546}
+{'epoch': 0, 'batch': 416, 'loss': 2.1381964683532715}
+{'epoch': 0, 'batch': 417, 'loss': 4.951252460479736}
+{'epoch': 0, 'batch': 418, 'loss': 3.40136981010437}
+{'epoch': 0, 'batch': 419, 'loss': 2.404864549636841}
+{'epoch': 0, 'batch': 420, 'loss': 3.792557954788208}
+{'epoch': 0, 'batch': 421, 'loss': 2.841972827911377}
+{'epoch': 0, 'batch': 422, 'loss': 4.979737281799316}
+{'epoch': 0, 'batch': 423, 'loss': 1.880834937095642}
+{'epoch': 0, 'batch': 424, 'loss': 3.4868953227996826}
+{'epoch': 0, 'batch': 425, 'loss': 4.437911033630371}
+['<annotation_start>', 'define', 'a', 'function', 'cache', '<annotation_end>#<code_start>', '', '', 'call', '', '', '', 'define', 'the', 'function', 'fname', 'with', "'wb'", 'does', 'class.\n', '', '', 'in', "'.djcache'\n", 'file', 'fname.\n', '', '', 'call', 'renamed', 'function', 'method', 'equals', '(', 'self', '', '', '', 'if', 'could', 'is', 'filelist.\n', '<code_end><annotation_start>', '', 'if', 'close', 'remove', 'the', '0.\n', 'to', 'version', 'as', 'arguments,', 'timeout', 'file', 'return', 'value', '', 'define', 'the', 'result', '-1', 'name', 'defaulting', '', '', 'self.\n', 'nothing.\n', '', '', 'call', 'self', 'method', 'e', 'with', 'caught,\n', 'and', 'None', '', '', '', '', 'if', '<code_end><annotation_start>', '', '1', 'key', 'with', 'e,', '!=', 'return', 'path', 'argument', 'delete', 'with', 'get', '!=', 'exist', 'and', 'self.get_backend_timeout', 'not', '', 'if', 'self._delete', 'force_bytes', 'self._dir']

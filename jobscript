@@ -1,0 +1,22 @@
+#!/bin/bash
+#SBATCH -J GPT2
+#SBATCH --mail-type=END
+#SBATCH --gres=gpu:V100:1 # select a host with a Volta GPU
+#SBATCH -t 3:00:00
+#SBATCH -N 3
+#SBATCH -n 1
+#SBATCH --mem=8192
+
+module purge
+module load anaconda3/latest
+. $ANACONDA_HOME/etc/profile.d/conda.sh
+conda create -n new_env
+conda activate new_env
+
+conda install -c huggingface transformers
+conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+pip install simpletransformers
+python3 /work/mushir/training.py
+
+conda deactivate
+
