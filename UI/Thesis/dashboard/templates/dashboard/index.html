@@ -1,0 +1,102 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Dashboard</title>
+    <! -- use local styles and JS files -- >
+    <link rel="stylesheet" href="{% static 'css/semantic.min.css' %}">
+    <script type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'modals/dashboard_view.js' %}" defer></script>
+  </head>
+
+  <body>
+    <! -- directory structure -- >
+    <div class="ui container">
+      <div class="ui secondary pointing menu">
+        <div class="active item">
+          <a href="#">  Home Page</a>
+        </div>
+        <div class=" item">
+          <a href ="#"> Info</a>
+        </div>
+
+        <div class="right menu">
+          <div class="item">
+<!--            <div class="ui icon input">-->
+<!--              <input type="text" placeholder="Search...">-->
+<!--              <i class="search link icon"></i>-->
+<!--            </div>-->
+          </div>
+          <div class="item">
+            Conceptual Solution
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <! -- Hide separator bar -- >
+    <div class="ui hidden divider">
+
+    </div>
+
+
+    <! -- body -- >
+    <div class="ui container segment">
+    <div class="ui top attached tabular menu">
+      <div id="template1" class="active item" data-tab="first" onclick="show_tab1()">Template 1</div>
+      <div id="template2" class="item" data-tab="second" onclick="show_tab2()">Template 2</div>
+        <div id="template3" class="item" data-tab="third" onclick="show_tab3()">Template 3</div>
+    </div>
+    <div id="template1_body" class="ui bottom attached active tab segment" data-tab="first">
+      <p></p>
+      <div class="ui form">
+      <div class="field">
+        <label>Requirements</label>
+        <textarea id="t1_input"></textarea>
+      </div>
+    <div class="ui primary button" tabindex="0">Generate</div>
+    </div>
+      <p></p>
+    </div>
+    <div id="template2_body" class="ui bottom attached tab segment" data-tab="second">
+      <p></p>
+      <div class="ui form">
+      <div class="field">
+        <label>Function Name and Parameters Description</label>
+        <textarea id="t2_id" rows="1"></textarea>
+      </div>
+      <div class="field">
+        <label>Function Body</label>
+        <textarea id="t2_function" rows="5"></textarea>
+      </div>
+      <div class="field">
+        <label>Return Type</label>
+        <textarea id="t2_return" rows="1"></textarea>
+      </div>
+
+    <div class="ui primary button" tabindex="0" onclick="source_code_gen()">Generate</div>
+        </div>
+    </div>
+
+     <div id="template3_body" class="ui bottom attached tab segment" data-tab="third">
+      <p></p>
+      <div class="ui form">
+      <div class="field">
+        <label>Function Name and Parameters Description</label>
+        <textarea id="t3_id" rows="1"></textarea>
+      </div>
+      <div class="field">
+        <label>Function Body</label>
+        <textarea id="t3_function" rows="5"></textarea>
+      </div>
+    <div class="ui primary button" tabindex="0" onclick="source_code_gen3()">Generate</div>
+        </div>
+    </div>
+
+    </div>
+  </body>
+
+</html>
